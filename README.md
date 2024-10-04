@@ -135,9 +135,12 @@ Create a repository interface to handle database operations for your entity.
 
 ### Repository
 
-```java
+```spring-boot
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 }
 ```
+
+## Step 7: Run the Application
+Once you've set up everything, run your Spring Boot application. It will automatically connect to the MySQL database. If everything is configured properly, Hibernate will handle the creation of the necessary tables based on your entities.
