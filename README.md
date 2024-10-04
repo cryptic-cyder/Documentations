@@ -55,3 +55,20 @@ spring.jpa.hibernate.ddl-auto=update
 # Optional: Show SQL queries in console
 spring.jpa.show-sql=true
 ```
+### Using application.yml
+Alternatively, you can use application.yml:
+
+```
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/your_database_name
+    username: your_username
+    password: your_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+```
