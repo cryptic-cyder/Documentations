@@ -76,3 +76,6 @@ spring:
     show-sql: true
 ```
 Replace your_database_name, your_username, and your_password with your actual MySQL database name and credentials.
+
+## Step 4: Create the Database
+Ensure that you create the database that you mentioned in the configuration. You can do this using the MySQL command line or a GUI tool like MySQL Workbench.
