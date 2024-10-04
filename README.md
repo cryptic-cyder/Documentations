@@ -17,7 +17,7 @@ In your `pom.xml` (for Maven) or `build.gradle` (for Gradle), add the MySQL conn
 
 ### Maven
 
-```
+```xml
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
