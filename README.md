@@ -80,7 +80,7 @@ spring:
     show-sql: true
 
 ```
-Replace 8181, your_database_name, your_username, and your_password with your server port(as your want like 8181,8282,9191 etc.) actual MySQL database name and credentials.
+Replace 8181, your_database_name, your_username, and your_password with your server port(as your want like 8181,8282,9191 etc.), actual MySQL database name, username, password.
 
 ## Step 4: Create the Database
 Ensure that you create the database that you mentioned in the configuration. You can do this using the MySQL command line or a GUI tool like MySQL Workbench.
