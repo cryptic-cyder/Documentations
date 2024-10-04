@@ -40,7 +40,7 @@ Spring Boot requires a database configuration to connect to MySQL. Add the follo
 
 ### Using application.properties
 
-```
+```properties
 # MySQL Database Configuration
 server.port = 8181
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
