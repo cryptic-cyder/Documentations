@@ -58,26 +58,29 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 # Optional: Show SQL queries in console
 spring.jpa.show-sql=true
 ```
-Replace your server port as you want
-
 ### Using application.yml
 Alternatively, you can use application.yml:
 
 ```yml
+server:
+  port: 8181
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/your_database_name
     username: your_username
     password: your_password
+    driver-class-name: com.mysql.jdbc.Driver
+
   jpa:
-    hibernate:
-      ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
     show-sql: true
+
 ```
-Replace your_database_name, your_username, and your_password with your actual MySQL database name and credentials.
+Replace 8181, your_database_name, your_username, and your_password with your server port(as your want like 8181,8282,9191 etc.) actual MySQL database name and credentials.
 
 ## Step 4: Create the Database
 Ensure that you create the database that you mentioned in the configuration. You can do this using the MySQL command line or a GUI tool like MySQL Workbench.
