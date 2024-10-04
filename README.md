@@ -17,16 +17,14 @@ In your `pom.xml` (for Maven) or `build.gradle` (for Gradle), add the MySQL conn
 
 ### Maven
 
-```xml
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.33</version>
-</dependency>```xml
+</dependency>
 
-Gradle
 
-dependencies {
-    implementation 'mysql:mysql-connector-java:8.0.33'
-}
+###Gradle
+
+
 
