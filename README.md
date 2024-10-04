@@ -42,15 +42,18 @@ Spring Boot requires a database configuration to connect to MySQL. Add the follo
 
 ```
 # MySQL Database Configuration
+server.port = 8181
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 
 # Hibernate Dialect for MySQL
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 
 # Hibernate DDL auto configuration
 spring.jpa.hibernate.ddl-auto=update
+
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
 # Optional: Show SQL queries in console
 spring.jpa.show-sql=true
