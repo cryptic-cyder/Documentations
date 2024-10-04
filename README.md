@@ -75,3 +75,4 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
 ```
+#### Replace your_database_name, your_username, and your_password with your actual MySQL database name and credentials.
