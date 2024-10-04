@@ -129,4 +129,15 @@ public class User {
     }
 }
 ```
- 
+
+## Step 6: Create a Repository Interface
+Create a repository interface to handle database operations for your entity.
+
+### Repository
+
+```java
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+}
+```
