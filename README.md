@@ -24,6 +24,11 @@ In your `pom.xml` (for Maven) or `build.gradle` (for Gradle), add the MySQL conn
     <version>8.0.33</version>
 </dependency>
 ```
-###Gradle
-
+### Gradle
+For Gradle, add the dependency in your build.gradle:
+```xml
+   dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.33'
+}
+```
 
