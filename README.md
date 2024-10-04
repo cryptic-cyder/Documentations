@@ -58,6 +58,8 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 # Optional: Show SQL queries in console
 spring.jpa.show-sql=true
 ```
+Replace your server port as you want
+
 ### Using application.yml
 Alternatively, you can use application.yml:
 
