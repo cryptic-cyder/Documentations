@@ -34,7 +34,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.33'
 }
 ```
-## Step 3: Configure application.properties or application.yml
+## Step 2: Configure application.properties or application.yml
 
 Spring Boot requires a database configuration to connect to MySQL. Add the following details in your src/main/resources/application.properties file:
 
@@ -82,14 +82,14 @@ spring:
 ```
 Replace 8181, your_database_name, your_username, and your_password with your server port(as your want like 8181,8282,9191 etc.), actual MySQL database name, username, password.
 
-## Step 4: Create the Database
+## Step 3: Create the Database
 Ensure that you create the database that you mentioned in the configuration. You can do this using the MySQL command line or a GUI tool like MySQL Workbench.
 
 ```SQL
 CREATE DATABASE your_database_name;
 ```
 
-## Step 5: Spring Boot Entity Configuration
+## Step 4: Spring Boot Entity Configuration
 Define your entity classes and annotate them with @Entity. Spring Boot will automatically map these to tables in your MySQL database.
 ### Entity
 ```JAVA
@@ -135,7 +135,7 @@ public class User {
 }
 ```
 
-## Step 6: Create a Repository Interface
+## Step 5: Create a Repository Interface
 Create a repository interface to handle database operations for your entity.
 
 ### Repository
@@ -147,5 +147,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
 }
 ```
 
-## Step 7: Run the Application
+## Step 6: Run the Application
 Once you've set up everything, run your Spring Boot application. It will automatically connect to the MySQL database. If everything is configured properly, Hibernate will handle the creation of the necessary tables based on your entities.
