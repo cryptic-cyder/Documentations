@@ -61,7 +61,7 @@ spring.jpa.show-sql=true
 ### Using application.yml
 Alternatively, you can use application.yml:
 
-```
+```yml
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/your_database_name
