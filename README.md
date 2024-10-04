@@ -29,7 +29,7 @@ For Gradle, add the dependency in your build.gradle:
 
 ### Gradle
 
-```xml
+```gradle
 dependencies {
     implementation 'mysql:mysql-connector-java:8.0.33'
 }
